@@ -1,0 +1,68 @@
+2022-07-21 11:45:55 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2022-07-21 11:45:55 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.57 ----------
+
+2022-07-21 11:45:55 INFO  ProjectStartupHandler.setAutoscrolls(346) - Autoscrolls successfully set
+2022-07-21 11:45:55 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(589) - The session is not set in the property file.
+2022-07-21 11:45:55 INFO  ApacheHttpClient.login(250) - Waiting for server response.
+2022-07-21 11:45:55 INFO  ApacheHttpClient.login(250) - Waiting for server response.
+2022-07-21 11:45:55 INFO  ApacheHttpClient.login(254) - responseCode = 200
+2022-07-21 11:45:55 INFO  ApacheHttpClient.login(277) - JSESSIONID OK
+2022-07-21 11:45:56 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2022-07-21 11:45:56 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2022-07-21 11:45:56 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2022-07-21 11:54:11 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 11:54:12 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-07-21 11:54:24 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/wojci/Downloads/project/CodeGymTasks/CodeGymTasks/lib
+2022-07-21 11:54:24 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 11:54:25 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 11:54:25 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-07-21 11:54:25 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/wojci/Downloads/project/CodeGymTasks/CodeGymTasks/8.Games/src/com
+2022-07-21 11:54:25 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/wojci/Downloads/project/CodeGymTasks/CodeGymTasks/8.Games/src/com/codegym
+2022-07-21 11:54:25 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/wojci/Downloads/project/CodeGymTasks/CodeGymTasks/8.Games/src/com/codegym/games
+2022-07-21 11:54:25 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/wojci/Downloads/project/CodeGymTasks/CodeGymTasks/8.Games/src/com/codegym/games/racer
+2022-07-21 11:54:25 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/wojci/Downloads/project/CodeGymTasks/CodeGymTasks/8.Games/src/com/codegym/games/racer/road
+2022-07-21 14:20:33 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:20:34 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-07-21 14:20:43 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:20:44 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-07-21 14:20:49 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:20:50 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-07-21 14:21:16 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:21:17 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-07-21 14:21:24 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:21:25 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-07-21 14:21:49 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:21:55 INFO  ApacheHttpClient.resetTask(324) - responseCode = 200
+2022-07-21 14:21:55 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-07-21 14:21:56 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-07-21 14:22:07 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:22:08 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-07-21 14:22:37 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:22:37 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-07-21 14:22:47 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:22:47 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2022-07-21 14:22:47 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-07-21 14:23:17 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-07-21 14:23:18 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-07-21 16:49:36 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2022-07-21 16:49:37 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-07-21 16:49:37 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2022-07-22 08:59:58 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2022-07-22 08:59:58 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.57 ----------
+
+2022-07-22 08:59:58 INFO  ProjectStartupHandler.setAutoscrolls(346) - Autoscrolls successfully set
+2022-07-22 08:59:58 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2022-07-22 08:59:58 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2022-07-22 08:59:58 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2022-07-22 08:59:58 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2022-07-22 08:59:58 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2022-07-22 08:59:58 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2022-07-25 10:43:19 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2022-07-25 10:43:19 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.57 ----------
+
+2022-07-25 10:43:19 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2022-07-25 10:43:19 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2022-07-25 10:43:19 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2022-07-25 10:43:19 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2022-07-25 10:43:19 INFO  ApacheHttpClient.startGA(36) - GAService started.
