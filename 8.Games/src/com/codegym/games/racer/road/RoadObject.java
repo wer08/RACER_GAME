@@ -55,6 +55,8 @@ public class RoadObject extends GameObject {
                 return ShapeMatrix.DRUNK_CAR;
             case BEAM:
                 return ShapeMatrix.BEAM;
+            case POWER_UP:
+                return ShapeMatrix.POWERUP;
             default:
                 return ShapeMatrix.TRUCK;
         }

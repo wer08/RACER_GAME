@@ -1,6 +1,5 @@
 package com.codegym.games.racer.road;
 
-import com.codegym.games.racer.GameObject;
 import com.codegym.games.racer.RacerGame;
 import com.codegym.games.racer.PlayerCar;
 
@@ -18,6 +17,7 @@ public class RoadManager {
     private static final int PLAYER_CAR_DISTANCE = 12;
     private List<RoadObject> items= new ArrayList<RoadObject>();
     private List<Beam> beams = new ArrayList<Beam>();
+    private List<PowerUP> powerUPS = new ArrayList<PowerUP>();
     private int passedCarsCount=0;
     
     
@@ -26,7 +26,8 @@ public class RoadManager {
         return passedCarsCount;
     }
 
-    public List<RoadObject> getItems() {
+    public List<RoadObject> getItems()
+    {
         return items;
     }
 
@@ -98,6 +99,19 @@ public class RoadManager {
         }
         return false;
     }
+
+    private void deletePassedPowerUps()
+    {
+        ListIterator<PowerUP> iterator = powerUPS.listIterator();
+        while(iterator.hasNext())
+        {
+            PowerUP powerUP = iterator.next();
+            if(powerUP.y >= RacerGame.HEIGHT)
+            {
+                iterator.remove();
+            }
+        }
+    }
     
     
     private void deletePassedItems()
@@ -153,6 +167,24 @@ public class RoadManager {
         }
         return false;
     }
+    private boolean powerUPExists()
+    {
+        ListIterator<RoadObject> iterator = items.listIterator();
+        while(iterator.hasNext())
+        {
+            if(iterator.next().type == RoadObjectType.POWER_UP)
+                return true;
+        }
+        return false;
+    }
+    private void generatePowerUP(Game game)
+    {
+        if(game.getRandomNumber(100) < 5 && !powerUPExists())
+        {
+            addPowerUPS(game);
+        }
+
+    }
     
     private void generateMovingCar(Game game)
     {
@@ -189,6 +221,7 @@ public class RoadManager {
         generateSpike(game);   
         generateRegularCar(game);
         generateMovingCar(game);
+        generatePowerUP(game);
     }
     
     
@@ -201,6 +234,10 @@ public class RoadManager {
         for(Beam beams: beams)
         {
             beams.draw(game);
+        }
+        for (PowerUP powerUP: powerUPS)
+        {
+            powerUP.draw(game);
         }
     }
     public void move(int boost)
@@ -215,7 +252,16 @@ public class RoadManager {
         }
         deletePassedItems();
         deletePassedBeams();
+        deletePassedPowerUps();
         
+    }
+    private void addPowerUPS(Game game)
+    {
+        int x = game.getRandomNumber(FIRST_LANE_POSITION,FOURTH_LANE_POSITION);
+        int y = -1*RoadObject.getHeight(RoadObjectType.POWER_UP);
+        RoadObject powerUP = createRoadObject(RoadObjectType.POWER_UP,x,y,game);
+        if(powerUP != null&&isRoadSpaceFree(powerUP))
+            powerUPS.add((PowerUP) powerUP);
     }
     
     
@@ -245,6 +291,10 @@ public class RoadManager {
         if (type==RoadObjectType.SPIKE)
         {
             return new Spike(x,y);
+        }
+        else if(type==RoadObjectType.POWER_UP)
+        {
+            return new PowerUP(x,y);
         }
         else if(type==RoadObjectType.DRUNK_CAR)
         {

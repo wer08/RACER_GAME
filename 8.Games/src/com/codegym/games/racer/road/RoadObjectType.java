@@ -7,5 +7,6 @@ public enum RoadObjectType {
     SPORT_CAR,
     SPIKE,
     DRUNK_CAR,
-    BEAM
+    BEAM,
+    POWER_UP
 }
