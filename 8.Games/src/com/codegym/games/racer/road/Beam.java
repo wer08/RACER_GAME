@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Beam extends RoadObject
 {
-    public Beam(int x,int y)
+    public Beam(double x,double y)
     {
-        super(RoadObjectType.BEAM, x, y);
+        super(RoadObjectType.BEAM,  x, y);
         speed=-2;
     }
-    public void move(int boost)
+    public void move(double boost)
     {
         this.y += boost;
     }

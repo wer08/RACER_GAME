@@ -6,9 +6,9 @@ import java.util.List;
 
 public class RoadObject extends GameObject {
     public RoadObjectType type;
-    public int speed;
+    public double speed;
     
-    public RoadObject(RoadObjectType type, int x, int y) {
+    public RoadObject(RoadObjectType type, double x, double y) {
         super(x, y);
         this.type = type;
         this.matrix = getMatrix(type);
@@ -16,15 +16,16 @@ public class RoadObject extends GameObject {
         this.height = matrix.length;
     }
 
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
-    public void setSpeed(int speed) {
+    public void setSpeed(double speed)
+    {
         this.speed = speed;
     }
 
-    public void move(int boost, List<RoadObject> roadObjects)
+    public void move(double boost, List<RoadObject> roadObjects)
     {
         this.y += boost;
     }
@@ -55,6 +56,8 @@ public class RoadObject extends GameObject {
                 return ShapeMatrix.DRUNK_CAR;
             case BEAM:
                 return ShapeMatrix.BEAM;
+            case POWER_UP:
+                return ShapeMatrix.POWERUP;
             default:
                 return ShapeMatrix.TRUCK;
         }
