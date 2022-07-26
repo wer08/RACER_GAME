@@ -3,6 +3,7 @@ package com.codegym.games.racer;
 import com.codegym.engine.cell.Color;
 import com.codegym.engine.cell.Game;
 import com.codegym.engine.cell.Key;
+import com.codegym.games.racer.road.PowerUP;
 import com.codegym.games.racer.road.RoadManager;
 import com.codegym.games.racer.road.RoadObject;
 
@@ -15,9 +16,10 @@ public class RacerGame extends Game
     public static final int HEIGHT = 64;
     public static final int CENTER_X = WIDTH / 2;
     public static final int ROADSIDE_WIDTH = 14;
-    private static final int RACE_GOAL_CARS_COUNT = 10;
+    private static final int RACE_GOAL_CARS_COUNT = 40;
 
-    public PlayerCar getPlayer() {
+    public PlayerCar getPlayer()
+    {
         return player;
     }
 
@@ -33,7 +35,6 @@ public class RacerGame extends Game
     private PlayerCar player;
     
     private RoadManager roadManager;
-
     private RoadMarking roadMarking;
     
     private void win()
@@ -80,6 +81,10 @@ public class RacerGame extends Game
         {
             gameOver();
             drawScene();
+        }
+        if(roadManager.checkPowerUP(player))
+        {
+            PowerUP.startAction(roadManager.getItems());
         }
       if(roadManager.checkBeamHit())
         {

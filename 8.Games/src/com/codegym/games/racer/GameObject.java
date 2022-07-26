@@ -5,18 +5,18 @@ import com.codegym.engine.cell.Game;
 import com.codegym.games.racer.road.RoadManager;
 
 public class GameObject {
-    public int x;
-    public int y;
+    public double x;
+    public double y;
     public int width;
     public int height;
     public int[][] matrix;
 
-    public int getX()
+    public double getX()
     {
         return x;
     }
 
-    public GameObject(int x, int y) {
+    public GameObject(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -33,7 +33,7 @@ public class GameObject {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 int colorIndex = matrix[j][i];
-                game.setCellColor(x + i, y + j, Color.values()[colorIndex]);
+                game.setCellColor((int)x + i, (int)y + j, Color.values()[colorIndex]);
             }
         }
     }
@@ -67,7 +67,7 @@ public class GameObject {
     }
 
 
-    private boolean isCollision(int x, int y) {
+    private boolean isCollision(double x, double y) {
         for (int matrixX = 0; matrixX < width; matrixX++) {
             for (int matrixY = 0; matrixY < height; matrixY++) {
                 if (matrix[matrixY][matrixX] != 0 && matrixX + this.x == x && matrixY + this.y == y) {

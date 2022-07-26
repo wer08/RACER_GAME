@@ -11,7 +11,7 @@ public class MovingCar extends RoadObject {
     }
 
     @Override
-    public void move(int boost, List<RoadObject> roadObjects) {
+    public void move(double boost, List<RoadObject> roadObjects) {
         y += boost;
         x += dx;
 

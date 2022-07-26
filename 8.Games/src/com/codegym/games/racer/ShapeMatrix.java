@@ -1,6 +1,12 @@
 package com.codegym.games.racer;
 
 public class ShapeMatrix {
+    public static final int[][] POWERUP = new int[][]
+            {
+                    {90,80,90},
+                    {80,120,80},
+                    {90,80,90}
+            };
     public static final int[][] BEAM = new int[][]
             {
                     {120},
