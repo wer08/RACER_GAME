@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9c2848-0864-419d-ba1c-a0669c6ee00f" name="Default" comment="If pressed esc instead of space when the game is won, the difficulty is increasing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/RacerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/RacerGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/ShapeMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/ShapeMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/PowerUP.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/PowerUP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/Beam.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/Beam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/MovingCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/MovingCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/RoadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/RoadManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/RoadObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/RoadObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/RoadObjectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/RoadObjectType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -488,6 +492,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="If pressed esc instead of space when the game is won, the difficulty is increasing" />
     <option name="LAST_COMMIT_MESSAGE" value="If pressed esc instead of space when the game is won, the difficulty is increasing" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/8.Games/src/com/codegym/games/racer/road/Beam.java</url>
+          <line>15</line>
+          <properties class="com.codegym.games.racer.road.Beam" method="move">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Instruction.png">
